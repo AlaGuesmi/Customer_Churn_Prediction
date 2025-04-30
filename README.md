@@ -4,93 +4,97 @@
 This project simulates a synthetic e-commerce dataset to explore key business analytics tasks such as customer churn prediction and return analysis. The dataset includes both transactional and behavioral data and presents real-world data challenges such as missing values, outliers, mixed data types, and high dimensionality.
 
 📁 **Dataset Overview**
+
 The dataset contains 12 features and 1 target variable:
 
-CustomerID: Unique identifier for each customer
+- CustomerID: Unique identifier for each customer
 
-Age: Age of the customer (some values missing)
+- Age: Age of the customer (some values missing)
 
-Gender: Male, Female, Non-binary
+- Gender: Male, Female, Non-binary
 
-Country: Customer's country
+- Country: Customer's country
 
-ProductCategory: Electronics, Clothing, Home, Beauty, Books
+- ProductCategory: Electronics, Clothing, Home, Beauty, Books
 
-PurchaseAmount: Amount spent (includes outliers)
+- PurchaseAmount: Amount spent (includes outliers)
 
-Rating: Customer product rating (1 to 5, with some missing values)
+- Rating: Customer product rating (1 to 5, with some missing values)
 
-Review: Ordinal textual feedback
+- Review: Ordinal textual feedback
 
-PurchaseDate: Transaction date (with some invalid entries)
+- PurchaseDate: Transaction date (with some invalid entries)
 
-LoyaltyMember: Whether the customer is in the loyalty program
+- LoyaltyMember: Whether the customer is in the loyalty program
 
-Returned: Whether the product was returned
+- Returned: Whether the product was returned
 
-Churn: Target variable indicating if the customer churned (Yes/No)
+- Churn: Target variable indicating if the customer churned (Yes/No)
 
 🛠️ **Tools & Libraries Used**
-Python (Pandas, NumPy) – Data manipulation
 
-Seaborn, Matplotlib – Visualization
+- Python (Pandas, NumPy) – Data manipulation
 
-Scikit-learn – Machine learning (Logistic Regression, Random Forest, Gradient Boosting)
+- Seaborn, Matplotlib – Visualization
 
-KNNImputer, SimpleImputer – Missing value handling
+- Scikit-learn – Machine learning (Logistic Regression, Random Forest, Gradient Boosting)
 
-StandardScaler, LabelEncoder – Preprocessing
+- KNNImputer, SimpleImputer – Missing value handling
 
-GridSearchCV – Hyperparameter tuning
+- StandardScaler, LabelEncoder – Preprocessing
 
-PCA – Dimensionality reduction
+- GridSearchCV – Hyperparameter tuning
+
+- PCA – Dimensionality reduction
 
 🔁 **Process & Methodology**
-Data Loading & Exploration
 
-Summary stats, missing data patterns, and data types.
+- Data Loading & Exploration
 
-Handling Missing Data
+  Summary stats, missing data patterns, and data types.
 
-Used SimpleImputer for numerical data and KNNImputer for multivariate imputation.
+- Handling Missing Data
 
-Outlier Treatment
+  Used SimpleImputer for numerical data and KNNImputer for multivariate imputation.
 
-Identified and capped extreme values in PurchaseAmount and Age.
+- Outlier Treatment
 
-Categorical Encoding
+  Identified and capped extreme values in PurchaseAmount and Age.
 
-Label encoding and ordinal mapping for review and churn-related features.
+- Categorical Encoding
 
-Feature Engineering
+  Label encoding and ordinal mapping for review and churn-related features.
 
-Interaction terms, purchase frequency, total spend per customer, etc.
+- Feature Engineering
 
-Dimensionality Reduction
+  Interaction terms, purchase frequency, total spend per customer, etc.
 
-Applied PCA to improve performance and reduce noise.
+- Dimensionality Reduction
 
-EDA
+  Applied PCA to improve performance and reduce noise.
 
-Correlation heatmaps, rating vs. churn analysis, category-wise trends.
+- EDA
 
-Model Building
+ Correlation heatmaps, rating vs. churn analysis, category-wise trends.
 
-Trained and compared:
+- Model Building
 
-Logistic Regression
+ Trained and compared:
 
-Random Forest Classifier
+-  Logistic Regression
 
-Gradient Boosting Classifier
+-  Random Forest Classifier
 
-Model Evaluation & Tuning
+-  Gradient Boosting Classifier
 
-Accuracy, classification report, and cross-validation with GridSearchCV.
+-  Model Evaluation & Tuning
+
+- Accuracy, classification report, and cross-validation with GridSearchCV.
 
 ✅ Outcomes
-Identified key predictors of churn, including product return behavior, low ratings, and lack of loyalty membership.
 
-Boosted model accuracy through feature interactions and parameter tuning.
+- Identified key predictors of churn, including product return behavior, low ratings, and lack of loyalty membership.
 
-Gained insights into customer behavior patterns for business decision-making.
+- Boosted model accuracy through feature interactions and parameter tuning.
+
+- Gained insights into customer behavior patterns for business decision-making.
