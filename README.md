@@ -75,11 +75,11 @@ The dataset contains 12 features and 1 target variable:
 
 - EDA
 
- Correlation heatmaps, rating vs. churn analysis, category-wise trends.
+  Correlation heatmaps, rating vs. churn analysis, category-wise trends.
 
 - Model Building
 
- Trained and compared:
+  Trained and compared:
 
 -  Logistic Regression
 
